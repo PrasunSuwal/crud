@@ -162,7 +162,7 @@
          'phone':$('input[name="phone"]').val(phone),
          'address':$('input[name="address"]').val(address)
         }
-         $.ajax({
+         $.ajax({ 
            type: 'POST',
            url:'{% url 'index' %}',
            data:formData,
